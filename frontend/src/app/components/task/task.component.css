@@ -1,0 +1,17 @@
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+} 
+
+.floatRight {
+    float: right;
+}
+.ml {
+    margin-left: 8px;
+}

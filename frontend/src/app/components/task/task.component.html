@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="jumbotron">
+<div class="container">
+  <h1 class="header">Task Manager</h1>
+  <form class="well well-lg">
+    <label>Titre</label> 
+    <input class="form-control mb15" type="text" name="Titre">
+    <label>Description</label> 
+    <textarea class="form-control mb15" rows="3" name="Description"></textarea>
+    <label>Deadline</label>
+    <input class="form-control mb15" type="date" name="Deadline">
+    <button class="btn btn-primary btn-block" type="button">Add Task</button>
+  </form> 
+
+  <div>
+    <ul  class="list-group" style="display: block" >
+        <li  class="list-group-item" *ngFor = "let task of tasks$">
+            <div class="floatRight">
+              <button class="btn " type="button"><i class="fa fa-bars"></i></button>
+              <button class="btn ml" type="button"><i class="fa fa-trash"></i></button>
+            </div>
+            <h4 class="list-group-item-heading">{{task.titre}} - {{task.dl}}  </h4>
+            <p class="list-group-item-text">{{task.description}}</p>
+     </ul>  
+
+    </div>
+</div>
+
+</div>
+
